@@ -1,0 +1,42 @@
+.html_shadow{
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px 0;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.body{
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    border: 2px solid #C2B62E;
+    border-bottom: 2px solid #746F16;
+    border-radius: 30px;
+    background: #8C742C; /* Для старых браузров */
+    background: radial-gradient(ellipse at 50% 50%, #98863C, #98863C, #634412);
+    min-height: 90vh;
+    overflow: hidden;
+}
+
+.body_wrapper{
+    display: flex;
+    position: relative;
+    min-height: 90vh;
+}
+/*
+
+.body .request{
+    border: 1px solid blue;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+}
+*/
+
+/*
+.body .request .request_wrapper,
+.body .request .ajax_answer{
+    border: 1px solid black;
+    font-size: 20px;
+    text-align: center;
+}*/

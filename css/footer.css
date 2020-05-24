@@ -1,0 +1,13 @@
+.footer{
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.details{
+    margin: 0 auto;
+    display: inline-block;
+    cursor: pointer;
+    user-select: none;
+}

@@ -1,0 +1,1306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta charset="utf-8"/>
+    <title>API Documentation</title>
+    <meta name="author" content=""/>
+    <meta name="description" content=""/>
+
+    <link href="../css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/prism.css" rel="stylesheet" media="all"/>
+    <link href="../css/template.css" rel="stylesheet" media="all"/>
+    
+    <!--[if lt IE 9]>
+    <script src="../js/html5.js"></script>
+    <![endif]-->
+    <script src="../js/jquery-1.11.0.min.js"></script>
+    <script src="../js/ui/1.10.4/jquery-ui.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery.smooth-scroll.js"></script>
+    <script src="../js/prism.min.js"></script>
+    <!-- TODO: Add http://jscrollpane.kelvinluck.com/ to style the scrollbars for browsers not using webkit-->
+    
+    <link rel="shortcut icon" href="../images/favicon.ico"/>
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+</head>
+<body>
+
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <i class="icon-ellipsis-vertical"></i>
+            </a>
+            <a class="brand" href="../index.html">API Documentation</a>
+
+            <div class="nav-collapse">
+                <ul class="nav pull-right">
+                                        <li class="dropdown" id="charts-menu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            Charts <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="../graphs/class.html">
+                                    <i class="icon-list-alt"></i>&#160;Class hierarchy diagram
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown" id="reports-menu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            Reports <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="../reports/errors.html">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <i class="icon-list-alt"></i>&#160;Errors <span class="label label-info pull-right">0</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../reports/markers.html">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <i class="icon-list-alt"></i>&#160;Markers <span class="label label-info pull-right">0</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../reports/deprecated.html">
+                                                                                                            <i class="icon-list-alt"></i>&#160;Deprecated <span class="label label-info pull-right">0</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--<div class="go_to_top">-->
+    <!--<a href="#___" style="color: inherit">Back to top&#160;&#160;<i class="icon-upload icon-white"></i></a>-->
+    <!--</div>-->
+</div>
+
+<div id="___" class="container-fluid">
+        <section class="row-fluid">
+        <div class="span2 sidebar">
+                                <div class="accordion" style="margin-bottom: 0">
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                                <a href="../namespaces/default.html" style="margin-left: 30px; padding-left: 0">\</a>
+            </div>
+            <div id="namespace-1148403457" class="accordion-body collapse in">
+                <div class="accordion-inner">
+
+                    
+                    <ul>
+                                                                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        </div>
+    </section>
+    <section class="row-fluid">
+        <div class="span10 offset2">
+            <div class="row-fluid">
+                <div class="span8 content namespace">
+                    <nav>
+                                                
+                                            </nav>
+                    <h1><small></small>\</h1>
+
+                    
+                    
+                    
+                                    </div>
+
+                <aside class="span4 detailsbar">
+                    <dl>
+                        <dt>Namespace hierarchy</dt>
+                        <dd class="hierarchy">
+                                                                                                                                                <div class="namespace-wrapper">\</div>
+                        </dd>
+                    </dl>
+                </aside>
+            </div>
+
+            
+                        <div class="row-fluid">
+                <section class="span8 content namespace">
+                    <h2>Functions</h2>
+                </section>
+                <aside class="span4 detailsbar"></aside>
+            </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_deleteMainMenuPosition" name="method_deleteMainMenuPosition" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">deleteMainMenuPosition()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">deleteMainMenuPosition(object  <span class="argument">$pdo</span>) : string</pre>
+                <p><em>Удаление производителя</em></p>
+                <p>Получает id производителя:<br>
+$_POST[&quot;id&quot;]</p>
+<p>Удаляет строку производителя из таблицы manufacturer<br>
+Удаляет все дочерние позиции<br>
+Ввиду сложности предсказания возможной ошибки и множества запросов, написать отдельную обработку ошибок и восстановление уже удалённых данных довольно проблематично.<br>
+Обработка ошибок одна на весь блок кода, в случае возникновения поблемы, обратитесь к администратору для восстановления структуры БД или напишите автору.</p>
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>object</td>
+                                <td>$pdo </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    string
+                                    
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href="../files/model.model.html"><div class="path-wrapper">model\model.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Calculator</p>
+                                                    </td>
+                    </tr>
+                                    <tr>
+                        <th>
+                            author
+                        </th>
+                        <td>
+                                                                                            <p>A.Yushko <a href="mailto:draackul2@gmail.com">draackul2@gmail.com</a></p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_deletePosition" name="method_deletePosition" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">deletePosition()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">deletePosition(object  <span class="argument">$pdo</span>) : string</pre>
+                <p><em>Удаление размрной позиции из базы банных</em></p>
+                <p>Получает имя ТАБЛИЦЫ позиции и имя размерной позиции в массиве $_POST в виде:<br>
+$_POST[&quot;posName&quot;]  --- например position_1_1<br>
+$_POST[&quot;sizeName&quot;] --- например 8*100</p>
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>object</td>
+                                <td>$pdo </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    string
+                                    
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href="../files/model.model.html"><div class="path-wrapper">model\model.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Calculator</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_deleteSecMenuPosition" name="method_deleteSecMenuPosition" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">deleteSecMenuPosition()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">deleteSecMenuPosition(object  <span class="argument">$pdo</span>) : string</pre>
+                <p><em>Удаление позиции производителя (меню secMenu)</em></p>
+                <p>Получает имя ТАБЛИЦЫ производителя и id удаляемой позиции производителя в массиве $_POST в виде:<br>
+$_POST[&quot;manufName&quot;];  --- например position_1<br>
+$_POST[&quot;id&quot;] --- id позиции производителя а таблице производителя</p>
+<p>Удаляет строку с данными позиции в таблице производителя, удаляет таблицу позиции производителя.</p>
+<p>Ошибок быть не должно, но если вдруг она произойдёт, необходимо вручную либо удалить строку из таблицы position_n, либо саму таблицу position_n_n (или и то и то). Либо сделать это же временно закоменнитировав другой запрос в функции ниже.</p>
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>object</td>
+                                <td>$pdo </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    string
+                                    
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href="../files/model.model.html"><div class="path-wrapper">model\model.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Calculator</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_getManufacturerName" name="method_getManufacturerName" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">getManufacturerName()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">getManufacturerName(object  <span class="argument">$pdo</span>, integer  <span class="argument">$hidden</span>) : array|string</pre>
+                <p><em>Получение списка производителей из базы данных</em></p>
+                <p>Функция получает данные производителей из таблицы manufacturer и формирует массив вида:<br>
+$data[&quot;manufacturer $i&quot;][&quot;id&quot;]<br>
+$data[&quot;manufacturer $i&quot;][&quot;name&quot;]<br>
+$data[&quot;manufacturer $i&quot;][&quot;sourceImg&quot;]<br>
+$data[&quot;manufacturer $i&quot;][&quot;hidden&quot;]<br>
+В случае ошибки возвращает строку с текстом ошибки.</p>
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>object</td>
+                                <td>$pdo </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$hidden </td>
+                                <td><p>если не 0 - строка будет пропущена(скрыта)</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    array|string
+                                    
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href="../files/model.model.html"><div class="path-wrapper">model\model.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Calculator</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_getPosition" name="method_getPosition" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">getPosition()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">getPosition(object  <span class="argument">$pdo</span>, string  <span class="argument">$nameTable</span>) : array|string</pre>
+                <p><em>Получение тыблицы самих позиций</em></p>
+                <p>Функция получает данные размерных позиций для таблицы с сеткой размеров и формирует массив вида:<br>
+$data[&quot;position $i&quot;][&quot;position&quot;]<br>
+$data[&quot;position $i&quot;][&quot;standart&quot;]<br>
+$data[&quot;position $i&quot;][&quot;quantity&quot;]<br>
+$data[&quot;position $i&quot;][&quot;quantity(-2%)&quot;]<br>
+$data[&quot;position $i&quot;][&quot;hidden&quot;]<br>
+$data[&quot;position $i&quot;][&quot;alt&quot;]<br>
+В случае ошибки возвращает строку с текстом ошибки.<br>
+Здесь без hidden, скрытые позиции пропускаются в component_index_show.</p>
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>object</td>
+                                <td>$pdo </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$nameTable </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    array|string
+                                    
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href="../files/model.model.html"><div class="path-wrapper">model\model.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Calculator</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_getPositionName" name="method_getPositionName" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">getPositionName()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">getPositionName(object  <span class="argument">$pdo</span>, string  <span class="argument">$nameTable</span>, integer  <span class="argument">$hidden</span>) : array|string</pre>
+                <p><em>Получение данных меню &quot;СПИСОК ПОЗИЦИЙ&quot;</em></p>
+                <p>Функция получает данные позиций производителя для меню secMenu и формирует массив вида:<br>
+$data[&quot;position $i&quot;][&quot;id&quot;]<br>
+$data[&quot;position $i&quot;][&quot;fName&quot;]<br>
+$data[&quot;position $i&quot;][&quot;sName&quot;]<br>
+$data[&quot;position $i&quot;][&quot;hidden&quot;]<br>
+В случае ошибки возвращает строку с текстом ошибки.</p>
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>object</td>
+                                <td>$pdo </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$nameTable </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$hidden </td>
+                                <td><p>если не 0 - строка будет пропущена(скрыта)</p></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    array|string
+                                    
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href="../files/model.model.html"><div class="path-wrapper">model\model.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Calculator</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_getUserData" name="method_getUserData" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">getUserData()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">getUserData(object  <span class="argument">$pdo</span>) : array|string</pre>
+                <p><em>Получение логинов и паролей из базы данных</em></p>
+                <p>Функция получает пары имя-пароль пользователей из таблицы users и формирует массив вида:<br>
+$user[&quot;user $i&quot;][&quot;name&quot;]<br>
+$user[&quot;user $i&quot;][&quot;password&quot;]<br>
+В случае ошибки возвращает строку с текстом ошибки.</p>
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>object</td>
+                                <td>$pdo </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    array|string
+                                    
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href="../files/model.model.html"><div class="path-wrapper">model\model.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Calculator</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_hiddenMainMenuPosition" name="method_hiddenMainMenuPosition" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">hiddenMainMenuPosition()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">hiddenMainMenuPosition(object  <span class="argument">$pdo</span>) : string</pre>
+                <p><em>Скрывает производителя</em></p>
+                <p>Получает id производителя, статус - 0 или 1:<br>
+$_POST[&quot;id&quot;]<br>
+$_POST[&quot;hidden&quot;]</p>
+<p>Обновляет статус производителя в таблице manufacturer обновляя столбец hidden. 1 - производитель скрыт, 0 - производитель отображается</p>
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>object</td>
+                                <td>$pdo </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    string
+                                    
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href="../files/model.model.html"><div class="path-wrapper">model\model.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Calculator</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_hiddenSecMenuPosition" name="method_hiddenSecMenuPosition" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">hiddenSecMenuPosition()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">hiddenSecMenuPosition(object  <span class="argument">$pdo</span>) : string</pre>
+                <p><em>Сокрытие позиции производителя (меню secMenu)</em></p>
+                <p>Получает имя ТАБЛИЦЫ производителя и id позиции производителя в массиве $_POST в виде:<br>
+$_POST[&quot;manufName&quot;];  --- например position_1<br>
+$_POST[&quot;id&quot;] --- id позиции производителя а таблице производителя<br>
+$_POST[&quot;hidden&quot;]</p>
+<p>По сути, меняет значение столбца hidden с 0 на 1 или наоборот. 1 - позиция скрыта.</p>
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>object</td>
+                                <td>$pdo </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    string
+                                    
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href="../files/model.model.html"><div class="path-wrapper">model\model.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Calculator</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_insertMainMenuPosition" name="method_insertMainMenuPosition" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">insertMainMenuPosition()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">insertMainMenuPosition(object  <span class="argument">$pdo</span>) : string</pre>
+                <p><em>Добавление нового производителя</em></p>
+                <p>Получает имя производителя и загружаемый файл(иконка, картинка) в виде:<br>
+$_POST[&quot;name&quot;] --- например Дружковка<br>
+$_FILES['userfile']</p>
+<p>Добавляет строку производителя в таблицу manufacturer<br>
+Создаёт таблицу позиций для нового производителя<br>
+Загружает файл.<br>
+Есть возможность записывать текстовый лог при ошибках, впрочем эти строки можно добавить в любую функцию</p>
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>object</td>
+                                <td>$pdo </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    string
+                                    
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href="../files/model.model.html"><div class="path-wrapper">model\model.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Calculator</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_insertPosition" name="method_insertPosition" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">insertPosition()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">insertPosition(object  <span class="argument">$pdo</span>) : string</pre>
+                <p><em>Добавление разметрой позиции в базу банных</em></p>
+                <p>Функция получает данные размерной позиции и делает запись в соответствующую таблицу. Данные приходят из массива $_POST в таком виде:
+$_POST[&quot;posName&quot;]  --- имя ТАБЛИЦЫ позиции например position_1_1<br>
+$_POST[&quot;sizeName&quot;] --- имя размерной позиции например 8*100<br>
+$_POST[&quot;weight&quot;]<br>
+$_POST[&quot;quantity&quot;]<br>
+$_POST[&quot;quantity(-2%)&quot;]<br>
+$_POST[&quot;hidden&quot;]<br>
+$_POST[&quot;title&quot;]</p>
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>object</td>
+                                <td>$pdo </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    string
+                                    
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href="../files/model.model.html"><div class="path-wrapper">model\model.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Calculator</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_insertSecMenuPosition" name="method_insertSecMenuPosition" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">insertSecMenuPosition()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">insertSecMenuPosition(object  <span class="argument">$pdo</span>) : string</pre>
+                <p><em>Добавление позиции производителя (меню secMenu)</em></p>
+                <p>Получает имя ТАБЛИЦЫ производителя и имя новой позиции производителя в массиве $_POST в виде:<br>
+$_POST[&quot;manufName&quot;];  --- например position_1<br>
+$_POST[&quot;fName&quot;] --- например DIN 933 цб<br>
+$_POST[&quot;sName&quot;] --- например Болт оцинкованный<br>
+Добавляет строку с данными позиции в таблицу производителя, создаёт новую дочернюю таблицу для размерных позиций.</p>
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>object</td>
+                                <td>$pdo </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    string
+                                    
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href="../files/model.model.html"><div class="path-wrapper">model\model.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Calculator</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_logIn" name="method_logIn" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">logIn()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">logIn(object  <span class="argument">$pdo</span>) : void|string</pre>
+                <p><em>Функция хеширует введённые логин и пароль и сравнивает с данными пользователей из БД</em></p>
+                <p>Функция работает с данными, полученными из массива $_POST в виде:<br>
+$_POST['user']['name']<br>
+$_POST['user']['password']<br>
+При обнаруженном совпадении перебрасывает на админ панель: header('Location: /calculator/admin.php')
+ИЗМЕНИТЕ КАТАЛОГ на свой корневой (строки 39 и 80)</p>
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>object</td>
+                                <td>$pdo </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    void|string
+                                    
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href="../files/controllers.component_login.html"><div class="path-wrapper">controllers\component_login.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Calculator</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_printMainMenu" name="method_printMainMenu" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">printMainMenu()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">printMainMenu(object  <span class="argument">$pdo</span>) : array</pre>
+                <p><em>Функция формирует html главного меню, меню производителей для админ панели</em></p>
+                <p>Структура данных получаемых внутри функции из модели:<br>
+$data[&quot;manufacturer $i&quot;][&quot;id&quot;]<br>
+$data[&quot;manufacturer $i&quot;][&quot;name&quot;]<br>
+$data[&quot;manufacturer $i&quot;][&quot;sourceImg&quot;]<br>
+$data[&quot;manufacturer $i&quot;][&quot;hidden&quot;]</p>
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>object</td>
+                                <td>$pdo </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    array
+                                    
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href="../files/controllers.component_admin_show.html"><div class="path-wrapper">controllers\component_admin_show.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Calculator</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_printMainMenu" name="method_printMainMenu" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">printMainMenu()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">printMainMenu(object  <span class="argument">$pdo</span>) : array</pre>
+                <p><em>Функция формирует html главного меню, меню производителей для пользовательских страниц</em></p>
+                <p>Структура данных получаемых внутри функции из модели:<br>
+$data[&quot;manufacturer $i&quot;][&quot;id&quot;]<br>
+$data[&quot;manufacturer $i&quot;][&quot;name&quot;]<br>
+$data[&quot;manufacturer $i&quot;][&quot;sourceImg&quot;]<br>
+$data[&quot;manufacturer $i&quot;][&quot;hidden&quot;]</p>
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>object</td>
+                                <td>$pdo </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    array
+                                    
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href="../files/controllers.component_index_show.html"><div class="path-wrapper">controllers\component_index_show.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Calculator</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_printSecondMenu" name="method_printSecondMenu" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">printSecondMenu()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">printSecondMenu(object  <span class="argument">$pdo</span>) : array</pre>
+                <p><em>Функция формирует html меню позиций, меню &quot;СПИСОК ПОЗИЦИЙ для админ панели&quot;</em></p>
+                <p>Структура данных получаемых внутри функции из модели:<br>
+$data[&quot;position $i&quot;][&quot;id&quot;]<br>
+$data[&quot;position $i&quot;][&quot;fName&quot;]<br>
+$data[&quot;position $i&quot;][&quot;sName&quot;]<br>
+$data[&quot;position $i&quot;][&quot;hidden&quot;]</p>
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>object</td>
+                                <td>$pdo </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    array
+                                    
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href="../files/controllers.component_admin_show.html"><div class="path-wrapper">controllers\component_admin_show.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Calculator</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_printSecondMenu" name="method_printSecondMenu" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">printSecondMenu()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">printSecondMenu(object  <span class="argument">$pdo</span>) : array</pre>
+                <p><em>Функция формирует html меню позиций, меню &quot;СПИСОК ПОЗИЦИЙ&quot; для пользовательских страниц</em></p>
+                <p>Структура данных получаемых внутри функции из модели:<br>
+$data[&quot;position $i&quot;][&quot;id&quot;]<br>
+$data[&quot;position $i&quot;][&quot;fName&quot;]<br>
+$data[&quot;position $i&quot;][&quot;sName&quot;]<br>
+$data[&quot;position $i&quot;][&quot;hidden&quot;]</p>
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>object</td>
+                                <td>$pdo </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    array
+                                    
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href="../files/controllers.component_index_show.html"><div class="path-wrapper">controllers\component_index_show.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Calculator</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_printSizesTable" name="method_printSizesTable" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">printSizesTable()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">printSizesTable(object  <span class="argument">$pdo</span>) : array</pre>
+                <p><em>Функция формирует html таблицы размерных позиций, сетка размеров для админ панели</em></p>
+                <p>Структура данных получаемых внутри функции из модели:<br>
+$data[&quot;position $i&quot;][&quot;position&quot;]<br>
+$data[&quot;position $i&quot;][&quot;standart&quot;]<br>
+$data[&quot;position $i&quot;][&quot;quantity&quot;]<br>
+$data[&quot;position $i&quot;][&quot;quantity(-2%)&quot;]<br>
+$data[&quot;position $i&quot;][&quot;hidden&quot;]<br>
+$data[&quot;position $i&quot;][&quot;alt&quot;]<br>
+Функция сортирует данные по размеру, создаёт строки tr для размеров начинающихся на определёное число</p>
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>object</td>
+                                <td>$pdo </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    array
+                                    
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href="../files/controllers.component_admin_show.html"><div class="path-wrapper">controllers\component_admin_show.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Calculator</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_printSizesTable" name="method_printSizesTable" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">printSizesTable()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">printSizesTable(object  <span class="argument">$pdo</span>) : array</pre>
+                <p><em>Функция формирует html таблицы размерных позиций, сетка размеров для пользовательских страниц</em></p>
+                <p>Структура данных получаемых внутри функции из модели:<br>
+$data[&quot;position $i&quot;][&quot;position&quot;]<br>
+$data[&quot;position $i&quot;][&quot;standart&quot;]<br>
+$data[&quot;position $i&quot;][&quot;quantity&quot;]<br>
+$data[&quot;position $i&quot;][&quot;quantity(-2%)&quot;]<br>
+$data[&quot;position $i&quot;][&quot;hidden&quot;]<br>
+$data[&quot;position $i&quot;][&quot;alt&quot;]<br>
+Функция сортирует данные по размеру, создаёт строки tr для размеров начинающихся на определёное число</p>
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>object</td>
+                                <td>$pdo </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    array
+                                    
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href="../files/controllers.component_index_show.html"><div class="path-wrapper">controllers\component_index_show.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Calculator</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_updateMainMenuPosition" name="method_updateMainMenuPosition" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">updateMainMenuPosition()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">updateMainMenuPosition(object  <span class="argument">$pdo</span>) : string</pre>
+                <p><em>Обновление производителя</em></p>
+                <p>Получает id производителя, Новое имя производителя, файл (иконка, картинка):<br>
+$_POST[&quot;id&quot;]<br>
+$_POST[&quot;name_upd&quot;]<br>
+$_FILES['userfile_upd']</p>
+<p>Обновляет имя производителя в таблице manufacturer<br>
+Обновляет иконку</p>
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>object</td>
+                                <td>$pdo </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    string
+                                    
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href="../files/model.model.html"><div class="path-wrapper">model\model.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Calculator</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_updatePosition" name="method_updatePosition" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">updatePosition()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">updatePosition(object  <span class="argument">$pdo</span>) : string</pre>
+                <p><em>Обновление разметрой позиции в базу банных</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>object</td>
+                                <td>$pdo </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    string
+                                    
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href="../files/model.model.html"><div class="path-wrapper">model\model.php</div></a></dd>
+                                                                                            <dt>See also</dt>
+                                                                <dd><a href=""><span class="namespace-wrapper">function insertPosition($pdo)</span></a></dd>
+                                                                </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Calculator</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                                        <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_updateSecMenuPosition" name="method_updateSecMenuPosition" class="anchor"></a>
+            <article class="method">
+                <h3 class=" ">updateSecMenuPosition()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">updateSecMenuPosition(object  <span class="argument">$pdo</span>) : string</pre>
+                <p><em>Обновление позиции производителя (меню secMenu)</em></p>
+                <p>Получает имя ТАБЛИЦЫ производителя и имя и id новой позиции производителя в массиве $_POST в виде:<br>
+$_POST[&quot;manufName&quot;];  --- например position_1<br>
+$_POST[&quot;fName&quot;] --- например DIN 933 цб<br>
+$_POST[&quot;sName&quot;] --- например Болт оцинкованный<br>
+$_POST[&quot;id&quot;] --- id позиции производителя а таблице производителя<br>
+Обновляет строку с данными позиции в таблице производителя</p>
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>object</td>
+                                <td>$pdo </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    string
+                                    
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                    <dt>File</dt>
+                    <dd><a href="../files/model.model.html"><div class="path-wrapper">model\model.php</div></a></dd>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            package
+                        </th>
+                        <td>
+                                                                                            <p>Calculator</p>
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                            
+        </div>
+    </section>
+
+    <footer class="row-fluid">
+        <section class="span10 offset2">
+            <section class="row-fluid">
+                <section class="span10 offset1">
+                    <section class="row-fluid footer-sections">
+                        <section class="span4">
+                                                        <h1><i class="icon-code"></i></h1>
+                            <div>
+                                <ul>
+                                                                    </ul>
+                            </div>
+                        </section>
+                        <section class="span4">
+                                                        <h1><i class="icon-bar-chart"></i></h1>
+                            <div>
+                                <ul>
+                                    <li><a href="../graphs/class.html">Class Hierarchy Diagram</a></li>
+                                </ul>
+                            </div>
+                        </section>
+                        <section class="span4">
+                                                        <h1><i class="icon-pushpin"></i></h1>
+                            <div>
+                                <ul>
+                                    <li><a href="../reports/errors.html">Errors</a></li>
+                                    <li><a href="../reports/markers.html">Markers</a></li>
+                                </ul>
+                            </div>
+                        </section>
+                    </section>
+                </section>
+            </section>
+            <section class="row-fluid">
+                <section class="span10 offset1">
+                    <hr />
+                    Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and authored
+                    on April 27th, 2020 at 04:13.
+                </section>
+            </section>
+        </section>
+    </footer>
+</div>
+
+</body>
+</html>

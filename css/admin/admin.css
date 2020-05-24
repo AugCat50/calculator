@@ -1,0 +1,164 @@
+.admin .name,
+.admin .weight,
+.admin .quantity,
+.admin .quantity-2{
+    width: 105px;
+}
+
+.button_1{
+    color: #FCF4E2;
+    background-color: rgba(0,0,0,.7);
+    padding: 4px;
+    cursor: pointer;
+    float: right;
+    border: 2px solid #B17D1A;
+    border-radius: 3px 3px 3px 10px;
+}
+
+.admin .work_zone p{
+    margin: 5px auto;
+}
+
+.admin .work_data_table{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+[show="1"]{
+    border-bottom: 3px solid black;
+}
+
+.answer{
+    color: green;
+    border-bottom: 2px solid black;
+    display: inline-block;
+}
+
+.second_nav .button_1{
+    margin-top: 10px;
+    margin-right: 10px;
+}
+/*************************************************** Second Menu*/
+.second_menu_point{
+    position: relative;
+}
+
+.second_menu_point_delete{
+    position: absolute;
+    right: 2px;
+    top: 3px;
+    background: rgba(0,0,0,.7);
+    padding: 4px;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #B17D1A;
+    border-radius: 3px 3px 3px 10px;
+    cursor: pointer;
+}
+
+.second_menu_point_update{
+    position: absolute;
+    right: 46px;
+    top: 3px;
+    background: rgba(0,0,0,.7);
+    padding: 4px;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #B17D1A;
+    border-radius: 3px 3px 3px 10px;
+    cursor: pointer;
+}
+
+.second_menu_point_update:hover,
+.second_menu_point_delete:hover,
+.button_1:hover{
+    border-color: #B1441A;
+    background-color: rgba(0,0,0,.9);
+}
+
+.second_menu_point_update .image,
+.second_menu_point_delete .image{
+    width: 28px;
+    height: 28px;
+}
+
+.second_menu_point_label{
+    position: absolute;
+    right: 7px;
+    bottom: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 2px;
+    padding: 4px 0 3px 4px;
+}
+
+.second_menu_point_hidden{
+    margin-left: 5px;
+}
+
+.checkbox_wrapper{
+    display: inline-block;
+    width: 24px;
+    height: 20px;
+    position: relative;
+    margin-left: 3px;
+}
+
+.second_menu_point_label:hover{
+    background-color: rgba(0,0,0,.1);
+    
+}
+
+.checkbox_image{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../../img/checkbox-radio-sprite-image.png) no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.second_menu_point_hidden:checked + .checkbox_image{
+    background-position: -25px 0;
+}
+
+.css_download{
+    width: 212px;
+    color: #FCF4E2;
+}
+
+.css_destroy{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.css_destroy .button_1{
+    border: none;
+    box-shadow: 0 0 0 1px #012D07, 0 0 0 2px #047112;
+}
+
+.css_destroy .button_1:hover{
+    box-shadow: 0 0 0 1px rgb(208,135,0), 0 0 0 2px rgb(208,147,32);
+}
+
+.wrapper_explanation{
+    user-select: none;
+}
+
+.wrapper_explanation:hover{
+    cursor: pointer;
+}
+
+.explanation{
+    font-size: 16px;
+    user-select: none;
+}
+
+/*
+.border_bottom_dashed{
+    border-bottom: 1px dashed #201D00;
+}*/

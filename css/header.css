@@ -1,0 +1,119 @@
+.header{
+    display: flex;
+    background: #BA9834; /* Для старых браузров */
+    background: linear-gradient(to bottom right, #634412, #BA9834, #E0CE62);
+}
+
+menu{
+    padding: 0;
+}
+li{
+    list-style-type: none;
+}
+
+.logo_link{
+    display: block;
+    margin: 10px auto;
+    width: 100%;
+    max-width: 60px;
+}
+
+.logo_img{
+    max-width: 60px;
+}
+
+.main_menu{
+    margin: 0 auto;
+}
+
+.main_nav{
+    border-right: 1px solid #F5DA95;
+    width: 100%;
+    max-width: 140px;
+    padding: 40px 12px 40px 30px; 
+}
+
+.main_menu_point{
+    margin-top: 4px;
+    background-color: #5D3C09;
+    width: 84px;
+    height: 74px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.main_menu_point:hover{
+    border:1px solid #EFBF3F;
+}
+
+.main_menu_point .link{
+    max-height: 60px;
+}
+
+.main_menu_point .logo_img{
+    width: 100%;
+    max-width: 60px;
+}
+
+.main_menu_point.active{
+    background-color: #EFBF3F;
+}
+
+.second_nav{
+    border-right: 1px solid #FEF1B4;
+    border-left: 1px solid #C7A76C;
+    width: 100%;
+    max-width: 360px;
+    padding: 70px 12px;
+}
+
+.second_nav_h2{
+    color: #F9F8EC;
+    text-transform: uppercase;
+    margin: 0 12px 12px;
+    font-size: 28px;
+}
+
+.second_menu{
+    margin: 0;
+}
+
+.second_menu_point{
+    background-color: rgba(144,71,20,.7);
+    height: 85px;
+    margin-top: 4px;
+    width: 320px;
+    padding: 12px;
+/*    color: #FCF4E2;*/
+/*    color: rgb(22,22,21);*/
+    color: white;
+    font-weight:bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.second_menu_point.active{
+    background: linear-gradient(to bottom right, #FED758, #FEFF9B);
+    height: 95px;
+    width: 330px;
+    color: #05040B;
+}
+
+.second_menu_point:hover{
+    border: 1px solid #FED758;
+}
+
+.second_menu_point.active:hover{
+    border: none;
+}
+
+.smp_head{
+    margin: 0;
+}
+
+.smp_text{
+    margin: 0;
+    font-weight: 100;
+}

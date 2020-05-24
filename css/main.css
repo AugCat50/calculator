@@ -1,0 +1,305 @@
+*{
+    box-sizing:border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.html{
+    background-image: url(../img/01_deus_ex_mankind_divided.jpg);
+    background-size: cover;
+}
+
+.main{
+    max-width: 1115px;
+    width: 100%;
+    border-left: 1px solid #B5A873;
+    font-size: 20px;
+    background: #8C742C; /* Для старых браузров */
+    background: radial-gradient(ellipse at 40% 48%, #98863C, #98863C, #634412);
+}
+
+.main_cont{
+    margin: 70px 20px 0;
+    background: #C3AC4C;
+    background: linear-gradient(to bottom left, #BE8E27, #EADF75, #FFFE90);
+    overflow:auto;
+}
+
+.main_header{
+    padding: 12px;
+    background-color: rgba(0,0,0,.08);
+}
+
+.main_h1{
+    color: #05040B;
+    text-transform: uppercase;
+    font-size: 28px;
+}
+
+.main .logo{
+    width: auto;
+    height: 74px;
+    float: left;
+    margin-right: 12px;
+}
+
+.main .section{
+    margin: 15px;
+    padding-bottom: 12px;
+}
+
+.work_zone{
+    border-bottom: 2px dashed #201D00;
+    max-width: 100%;
+}
+
+.table_wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+}
+
+.work_data_table,
+.work_zone_list{
+    margin: 10px 0;
+}
+
+.work_data_table,
+.work_data_point,
+.work_zone_list,
+.work_zone_list_point{
+    border: 1px dashed #201D00;
+    border-collapse: collapse;
+    padding: 10px;
+    font-size: 20px;
+    color: #201D00;
+}
+
+.work_zone_list,
+.work_zone_list_point{
+    padding: 2px 10px;
+    min-width: 46px;
+}
+
+.active_name{
+    font-size: 24px;
+}
+
+/*---------------------------------------------- work_zone_form*/
+.work_zone_form .button_1{
+    margin: 5px;
+}
+
+.work_zone_form.h3{
+    color: #201D00;
+    margin: 12px 0;
+    user-select: none;
+}
+
+.work_zone_form .p{
+     margin: 0 0 5px;
+}
+
+.work_zone_form{
+    color: #201D00;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.work_zone_form .label{
+    margin-right: 15px;
+    width: 120px;
+}
+
+.work_zone_form .input{
+    width: 110px;
+    padding: 4px;
+    border: 1px solid #201D00;
+    background-color: rgba(255,255,255,.5);
+    cursor: text;
+    margin: 2px;
+}
+
+.work_zone_form .submit{
+    color: #FCF4E2;
+    background-color: rgba(0,0,0,.7);
+    padding: 4px;
+    border: 1px solid #FCF4E2;
+    cursor: pointer;
+}
+/*---------------------------------------------- end --- work_zone_form*/
+
+.sizes_table{
+    background: none;
+}
+
+.sizes_row{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 4px 0;
+}
+
+.sizes_point{  
+    padding: 10px;
+    font-size: 20px;
+/*    color: #FCF4E2;*/
+    color: white;
+    background-color: rgba(144,71,20,.8);
+    margin: 1px;
+    width: 85px;
+    height: 44px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.sizes_point:hover{
+    background-color: rgba(144,71,20,.6);
+}
+
+.sizes_point.active{
+    background-color: #FFFE90;
+    color: #05040B;
+    border: 2px solid #201D00;
+}
+
+.request pre{
+    text-align: left;
+}
+
+.breenBorder{
+    border-bottom: 3px solid green;
+}
+
+.sizes_alt{
+    margin: 10px auto;
+    padding: 2px 4px;
+    border: 2px solid green;
+    display: none;
+}
+
+.red{
+    color: red !important;
+}
+
+.green{
+    color: green !important;
+}
+
+.login{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border: none !important;
+    padding: 4px !important;
+    box-shadow: 0 0 0 1px #012D07, 0 0 0 2px #047112;
+}
+
+.login:hover{
+    box-shadow: 0 0 0 1px rgb(208,135,0), 0 0 0 2px rgb(208,147,32);
+}
+
+.ico_image{
+    max-width: 30px;
+    max-height: 30px;
+}
+
+.button_2{
+    color: #FCF4E2;
+    background-color: rgba(0,0,0,.7);
+    padding: 5px 5px 0 5px;
+    cursor: pointer;
+    text-decoration: none;
+    border: 2px solid #B17D1A;
+    border-radius: 3px 3px 3px 10px;
+    margin-right: 15px;
+}
+.button_2:hover{
+    border-color: #B1441A;
+    background-color: rgba(0,0,0,.9);
+}
+
+.work_zone_list_point .button_2{
+    margin: 0;
+}
+
+.work_zone_list_point .smp_text{
+    font-size: 12px;
+}
+
+.work_zone_list_point .logo_img{
+    margin-bottom: -6px;
+    max-width: 43px;
+}
+
+.work_zone_list_point .label{
+    user-select: none;
+}
+
+/*
+.hidden_string{
+    height: 0px;
+    width: 0px;
+    overflow: hidden;
+    margin: 0;
+}
+*/
+
+.hidden_string{
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    border: 1px solid rgba(0,0,0,0);
+}
+
+.no_margin{
+    margin: 0;
+}
+
+.copy_complete_p{
+    height: 28px;
+    margin-top: 4px;
+/*    max-width: 200px;*/
+}
+
+.copy_complete{
+    border: 2px solid green;
+    display: none;
+/*    margin: 10px auto;*/
+/*    opacity: 0;*/
+}
+
+.copy_to_table{
+    border: 2px solid red;
+    display: none;
+}
+
+.main_checkbox_wrapper{
+    display: inline-block;
+    width: 24px;
+    height: 20px;
+    position: relative;
+    margin-left: 3px;
+}
+
+.checkbox_image{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/checkbox-radio-sprite-image.png) no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.css_list_checkbox:checked + .checkbox_image{
+    background-position: -25px 0;
+}
+
+.black{
+    color: black;
+}
+
+.hidden_string1{
+    max-width: 50px;
+}

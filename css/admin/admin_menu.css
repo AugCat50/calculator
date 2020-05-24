@@ -1,0 +1,92 @@
+/*******************************************  main menu*/
+.main_menu_serice{
+    margin-top: 4px;
+    margin-bottom: 10px;
+    background-color: rgba(0,0,0,.13);;
+    width: 84px;
+    height: 74px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.main_menu_point_delete{
+    position: absolute;
+    right: 0;
+    top: 3px;
+    background: rgba(0,0,0,.7);
+    padding: 4px;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #B17D1A;
+    border-radius: 3px 3px 3px 10px;
+    cursor: pointer;
+}
+
+.main_menu_point_update{
+    position: absolute;
+    right: 44px;
+    top: 3px;
+    background: rgba(0,0,0,.7);
+    padding: 4px;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #B17D1A;
+    border-radius: 3px 3px 3px 10px;
+    cursor: pointer;
+}
+
+.main_menu_point_update .image,
+.main_menu_point_delete .image{
+    width: 28px;
+    height: 28px;
+}
+
+.main_menu_point_update:hover,
+.main_menu_point_delete:hover,
+.button_1:hover{
+    border-color: #B1441A;
+    background-color: rgba(0,0,0,.9);
+}
+
+.main_menu_point_label{
+    position: absolute;
+    right: 4px;
+    bottom: 5px;
+    font-size: 10px;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 2px;
+    padding: 4px 0 3px 4px;
+    color: white;
+    text-transform: uppercase;
+}
+.main_menu_point_label:hover{
+    background-color: rgba(0,0,0,.1);   
+}
+
+.main_menu_point_hidden{
+    margin-left: 5px;
+}
+
+.main_checkbox_wrapper{
+    display: inline-block;
+    width: 24px;
+    height: 20px;
+    position: relative;
+    margin-left: 3px;
+}
+
+.main_menu_point_hidden:checked + .checkbox_image{
+    background-position: -25px 0;
+}
+
+.css_manufacturer_name{
+    width: 212px;
+}
+
+.second_menu_point[show="1"]{
+    border-bottom: 2ps solid black;
+}
